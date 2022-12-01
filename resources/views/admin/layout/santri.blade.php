@@ -8,5 +8,5 @@ if(Session()->get('username')=="") {
 @include('admin/layout/head')
 @include('admin/layout/header')
 @include('admin/layout/menu')
-@include($content)
+
 @include('admin/layout/footer')

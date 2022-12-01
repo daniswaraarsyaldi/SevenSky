@@ -10,18 +10,25 @@
               <hr>
             </div>
 
-            
-              <?php foreach($galeris as $galeri) { ?>
-          <div class="col-lg-4 col-md-6 galeri">
-            <div class="member" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="{{ asset('public/upload/image/'.$galeri->gambar) }}" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4><?php echo strip_tags($galeri->judul_galeri) ?></h4>
-                <span><?php echo $galeri->nama_kategori_galeri ?></span>
+            <table id="example1" class="display table table-bordered table-sm" cellspacing="0" width="100%">
+            <thead>
+          <tr class="bg-info">
+            <th width="5%">
+              <div class="mailbox-controls">
+                <!-- Check all button -->
+                <button type="button" class="btn btn-info btn-sm checkbox-toggle"><i class="far fa-square"></i>
+                </button>
               </div>
-            </div>
-          </div>
-          <?php } ?>
+            </th>
+            <hr>
+            <th width="8%">Nama</th>
+            <th width="30%">Alamat</th>
+            <th width="15%">No Telepon</th>
+            <th width="5%">STATUS</th> 
+            <!-- <th width="7%">STOK</th> -->
+            <th width="20%">Action</th>
+          </tr>
+        </thead></table>
 
           <div class="col-md-12  justify-content-center">
             <br><br>
