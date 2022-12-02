@@ -39,10 +39,10 @@
                 </button>
             </div>
         </th>
-    <th width="15%">VIDEO</th>
-    <th width="30%">JUDUL</th>
-    <th width="20%">KETERANGAN</th>
-    <th width="10%">POSISI</th>
+    <!-- <th width="15%">VIDEO</th> -->
+    <th width="30%">Nama</th>
+    <th width="20%">Alamat</th>
+    <th width="10%">No Telepon</th>
     <th>ACTION</th>
 </tr>
 </thead>
@@ -56,15 +56,16 @@
                    <label for="check<?php echo $i ?>"></label>
         </div>
     </td>
-      <td>
+      <!-- <td>
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ $video->video }}?rel=0" allowfullscreen></iframe>
+            <?php echo $video->video ?>
         </div>
-    </td>
+    </td> -->
 
     <td><?php echo $video->judul ?></td>
     <td><small><?php echo $video->keterangan ?></small></td>
-    <td><?php echo $video->posisi ?></td>
+    <td><?php echo $video->video ?></td>
     <td>
         <div class="btn-group">
         <a href="{{ asset('admin/video/edit/'.$video->id_video) }}" 

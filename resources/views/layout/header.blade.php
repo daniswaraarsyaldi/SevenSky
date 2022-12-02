@@ -35,7 +35,8 @@ $nav_profil           = $myproduk->nav_profil();
             </li>
            
             <li><a href="{{ asset('produk') }}">Pengumuman</a></li>
-            <li><a href="{{ asset('galeri') }}">Galeri</a></li>
+            <!-- <li><a href="{{ asset('galeri') }}">Data Santri</a></li> -->
+            <li><a href="{{ asset('video') }}">Data Santri</a></li>
             <li><a href="{{ asset('kontak') }}">Kontak</a></li>
               <!-- <li>
                   <a href="{{ asset('pemesanan') }}" class="orange" title="Form Pemesanan"><div class="belanja"><i class="fa fa-shopping-cart"></i> Form Order</div></a>

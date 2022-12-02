@@ -72,10 +72,10 @@ $site                 = DB::table('konfigurasi')->first();
           <i class="fas fa-fw fa-book"></i> <span>Pengumuman &amp; Layanan</span></a>
       </li>
 
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="{{ asset('admin/santri') }}">
           <i class="fas fa-fw fa-book"></i> <span>Data &amp; Santri</span></a>
-      </li>
+      </li> -->
       <li class="nav-item">
         <a class="nav-link" href="{{ asset('admin/produk/tambah') }}">
           <i class="fas fa-fw fa-plus"></i> <span>Tambah Pengumuman</span></a>
@@ -133,7 +133,7 @@ $site                 = DB::table('konfigurasi')->first();
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ asset('admin/video') }}">
-          <i class="fab fa-fw fa-youtube"></i> <span>Video Youtube</span></a>
+          <i class="fas fa-fw fa-book"></i> <span>Data & Santri</span></a>
       </li>
       <?php if(Session()->get('akses_level')=="Admin") { ?>
       <li class="nav-item">

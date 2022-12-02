@@ -6,26 +6,58 @@
         <div class="kotak">
           <div class="row" data-aos="fade-left">
             <div class="col-md-12 text-center">
-              <h1><?php echo $title ?></h1>
+              <h1>Daftar Santri Miftahul Jannah</h1>
               <hr>
             </div>
 
-            
-              <?php foreach($videos as $video) { ?>
-          <div class="col-lg-6 col-md-6 galeri">
-            <div class="member" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ $video->video }}?rel=0" allowfullscreen></iframe>
-                </div>
+            <table id="example1" class="display table table-bordered table-sm" cellspacing="0" width="100%">
+            <thead>
+          <tr class="bg-info">
+            <th width="5%">
+              <div class="mailbox-controls">
+                <!-- Check all button -->
+                <button type="button" class="btn btn-info btn-sm checkbox-toggle"><i class="far fa-square"></i>
+                </button>
               </div>
-              <div class="member-info">
-                <h4><?php echo $video->judul ?></h4>
-                <span><?php echo $video->keterangan ?></span>
-              </div>
-            </div>
-          </div>
-          <?php } ?>
+            </th>
+            <hr>
+            <th width="8%">Nama</th>
+            <th width="30%">Alamat</th>
+            <th width="15%">No Telepon</th>
+            <!-- <th width="5%">STATUS</th>  -->
+            <!-- <th width="7%">STOK</th> -->
+            <!-- <th width="20%">Action</th> -->
+          </tr>
+        </thead><tbody>
+
+<?php $i=1; foreach($videos as $video) { ?>
+
+    <td class="text-center">
+    <div class="icheck-primary">
+              <input type="checkbox" class="icheckbox_flat-blue " name="id_video[]" value="<?php echo $video->id_video ?>" id="check<?php echo $i ?>">
+               <label for="check<?php echo $i ?>"></label>
+    </div>
+</td>
+
+<td><?php echo $video->judul ?></td>
+<td><small><?php echo $video->keterangan ?></small></td>
+<td><?php echo $video->video ?>
+</td>
+<!-- <td>
+    <div class="btn-group">
+    <a href="{{ asset('admin/video/edit/'.$video->id_video) }}" 
+      class="btn btn-warning btn-sm"><i class="fa fa-edit"></i></a>
+
+      <a href="{{ asset('admin/video/delete/'.$video->id_video) }}" class="btn btn-danger btn-sm  delete-link">
+        <i class="fa fa-trash"></i></a>
+    </div>
+
+</td> -->
+</tr>
+
+<?php $i++; } ?>
+
+</tbody></table>
 
           <div class="col-md-12">
             <br><br>

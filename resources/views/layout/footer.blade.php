@@ -63,7 +63,9 @@ $site       = DB::table('konfigurasi')->first();
             <div class="footer-info">
               <h3><?php echo $site->namaweb?></h3>
               <div class="pb-3">
-                <?php echo $site->deskripsi ?>
+                <p>
+                  Dengan menuntut ilmu, kita dapat menghindarkan diri dari kebodohan dan memperkuat rasa cinta serta syukur kepada Allah SWT.
+                </p>
               </div>
               <div class="social-links mt-3">
                 <a href="<?php echo $site->facebook ?>" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -85,7 +87,7 @@ $site       = DB::table('konfigurasi')->first();
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Pemesanan</h4>
+            <!-- <h4>Pemesanan</h4> -->
             <p>
               <strong><?php echo strtoupper($site->namaweb) ?></strong>
               <br><?php echo nl2br($site->alamat) ?>

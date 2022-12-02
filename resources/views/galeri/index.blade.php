@@ -6,7 +6,7 @@
         <div class="kotak">
           <div class="row" data-aos="fade-left">
             <div class="col-md-12 text-center">
-              <h1><?php echo $title ?></h1>
+              <h1>Data Santri Masjid Miftahul Jannah.</h1>
               <hr>
             </div>
 
@@ -24,11 +24,24 @@
             <th width="8%">Nama</th>
             <th width="30%">Alamat</th>
             <th width="15%">No Telepon</th>
-            <th width="5%">STATUS</th> 
+            <!-- <th width="5%">STATUS</th>  -->
             <!-- <th width="7%">STOK</th> -->
-            <th width="20%">Action</th>
+            <!-- <th width="20%">Action</th> -->
           </tr>
-        </thead></table>
+        </thead><tbody>
+        <td>
+          <p></p>
+        </td>
+        <td>
+          <p>Sodikin</p>
+        </td>
+        <td>
+          <p>Bandar Lampung</p>
+        </td>
+        <td>
+          <p>081234567890</p>
+        </td>
+        </tbody></table>
 
           <div class="col-md-12  justify-content-center">
             <br><br>
